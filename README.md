@@ -17,6 +17,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 * **More info**: ITERNOVA [http://www.iternova.net]
 * **Based on**: https://github.com/ash2k/mogilefs-php-client-improved
 
+### Example 
+
 ```php
 Usage Example:
 // Load handler controller
@@ -40,4 +42,14 @@ echo "Rename data: " . $mfs->rename( 'data_key', 'new_key' );
 
 // Delete data
 $mfs->delete( 'new_key' );
+```
+
+### Composer.json
+In order to use composer, complete your composer.json file with:
+```js
+{
+    "require": {
+       "jorgecasas/mogilefs-php": "dev-master"
+    }
+}
 ```
