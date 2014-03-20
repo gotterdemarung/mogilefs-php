@@ -2,7 +2,7 @@
 	"name": "jorgecasas/mogilefs-php",
 	"description": "A simple MogileFS PHP client",
 	"keywords": ["filesystems", "mogilefs", "php"],
-    "homepage": "https://github.com/jorgecasas/mogilefs-php-client",
+    "homepage": "https://github.com/jorgecasas/mogilefs-php",
 	"authors": [
         {
             "name": "ITERNOVA",
