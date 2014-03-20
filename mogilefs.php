@@ -618,7 +618,7 @@ class MogileFS {
 			throw new Exception( get_class( $this ) . "::set_resource {$this->_curlError}" );
 		}
 
-		if ( $this->_curlInfo[ 'http_code' ] != 201 ) { // Not HTTP 201 Created
+		if ( !in_array( $this->_curlInfo[ 'http_code' ], array( 200, 201 ) ) ) { // Not HTTP 201 Created nor 200 OK
 			throw new Exception( get_class( $this ) . "::set_resource server returned HTTP {$this->_curlInfo[ 'http_code' ]} code" );
 		}
 
