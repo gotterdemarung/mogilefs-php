@@ -17,6 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 * **More info**: ITERNOVA [http://www.iternova.net]
 * **Based on**: https://github.com/ash2k/mogilefs-php-client-improved
 
+
 ### Example 
 
 ```php
