@@ -701,4 +701,24 @@ class MogileFS {
 
 	}
 
+	/**
+	 * Call remote method
+	 * @see https://github.com/mogilefs/perl-MogileFS-Client/tree/master/lib/MogileFS
+	 * 
+	 * @param string $method Method identifier<br/>
+	 *					- Some methods: get_hosts, get_devices, get_domains, get_classes, server_settings...<br/>
+	 *					- Some methods require array of args<br/>
+	 * @return array Response 
+	 */
+	public function call_method( $method = 'get_devices', $method_args = array() ) {
+		$this->_curlInfo = null;
+		$this->_curlError = null;
+		$this->_curlErrno = 0;
+		try {
+			return $this->do_request( $method, $method_args );
+		} catch ( Exception $e ) {
+			throw $e;
+		}
+
+	}
 }
